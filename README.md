@@ -12,6 +12,7 @@ phase = Image.open('./westconcordorthophoto.png')
 아래 코드에서 imSeqLowRes[:,:,tt] 부분이 촬영되는 이미지를 모델링 한 부분이고, 주석된 부분을 제거하면 저장되게 만들어 놨습니다.
 
 
+
 for tt in range (0,arraysize**2):
     kxc = int((n+1)/2+kx[0,tt]/dkx)
     kyc = int((m+1)/2+ky[0,tt]/dky)
