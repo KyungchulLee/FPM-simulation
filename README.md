@@ -8,12 +8,12 @@ microscopy 이미지를 object로 사용하면 좋지만, 우선 모델의 테�
 <pre><code>{
 objectAmplitude = Image.open('./cameraman.tif')
 phase = Image.open('./westconcordorthophoto.png')
-}
+}</code></pre>
 
 아래 코드에서 imSeqLowRes[:,:,tt] 부분이 촬영되는 이미지를 모델링 한 부분이고, 주석된 부분을 제거하면 저장되게 만들어 놨습니다.
 
 
-
+<pre><code>
 for tt in range (0,arraysize**2):
     kxc = int((n+1)/2+kx[0,tt]/dkx)
     kyc = int((m+1)/2+ky[0,tt]/dky)
@@ -25,5 +25,5 @@ for tt in range (0,arraysize**2):
     imSeqLowRes[:,:,tt] = np.absolute(np.fft.ifft2(np.fft.ifftshift(imSeqLowFT)))
     # 촬영되는 이미지를 저장하려면
     #plt.imsave('image_'+str(tt)+'.png',imSeqLowRes[:,:,1])
-
+</code></pre>
 
