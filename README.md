@@ -5,9 +5,10 @@ microscopy 이미지를 object로 사용하면 좋지만, 우선 모델의 테�
 
 코드 상의 아래 두 부분에 이미지를 넣어주면 복원 하고 싶은 object의 amplitude와 phase를 모델링 할 수 있습니다. 
 
-
+<pre><code>{
 objectAmplitude = Image.open('./cameraman.tif')
 phase = Image.open('./westconcordorthophoto.png')
+}
 
 아래 코드에서 imSeqLowRes[:,:,tt] 부분이 촬영되는 이미지를 모델링 한 부분이고, 주석된 부분을 제거하면 저장되게 만들어 놨습니다.
 
