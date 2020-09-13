@@ -1,7 +1,9 @@
 # FPM simulation
 
 microscopy 이미지를 object로 사용하면 좋지만, 우선 모델의 테스트를 위해서는 아무 이미지나 인풋으로 사용해도 될것 같습니다.
-input data set: https://data.vision.ee.ethz.ch/cvl/DIV2K/
+
+Potential Input data link: https://data.vision.ee.ethz.ch/cvl/DIV2K/
+
 오브젝트로 사용할 이미지를 아래의 objectAmplitude, phase 변수에 넣어주면 됩니다. 
 
 코드 상의 아래 두 부분에 이미지를 넣어주면 복원 하고 싶은 object의 amplitude와 phase를 모델링 할 수 있습니다. 
